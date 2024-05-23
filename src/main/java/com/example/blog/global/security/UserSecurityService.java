@@ -31,6 +31,6 @@ public class UserSecurityService implements UserDetailsService {
         Member member = _user.get();
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        return new User(member.getUserId(), member.getUserPw(), authorities);
+        return new User(member.getUsername(), member.getUserPw(), authorities);
     }
 }
