@@ -1,9 +1,8 @@
-package com.example.blog.domain.post.entity;
+package com.example.blog.domain.member.entity;
 
 import com.example.blog.global.jpa.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.Comment;
@@ -14,7 +13,7 @@ import org.hibernate.annotations.Comment;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class member extends BaseEntity {
+public class Member extends BaseEntity {
     @Comment("유저 아이디")
     @Column(unique = true)
     private String userId;
